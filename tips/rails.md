@@ -39,7 +39,7 @@ It had a table with weird column names like SERNUM_0, ITMDES1_0 and other. We ma
 
 ## Object#presence
 
-This one is more popular than others. There’s pretty good explanation on ApiDock. So, object.presence is equivalent to:
+This one is more popular than others. There’s pretty good explanation on  <a href="https://apidock.com/rails/Object/presence">ApiDock</a>. So, object.presence is equivalent to:
 
 ```
   object.present? ? object : nil
