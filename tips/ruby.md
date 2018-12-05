@@ -53,3 +53,26 @@ SQL
 
 puts sql
 ```
+
+## Unary operators for non-numeric objects
+
+It’s possible to implement unary operators to an object by defining the `-@` and `+@` methods within the class declaration
+
+
+
+```ruby
+class True
+  def -@
+    false
+  end
+  
+  def +@
+    true
+   end
+end
+
+t = True.new
+
+p -t
+p +t
+```
