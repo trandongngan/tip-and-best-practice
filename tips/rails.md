@@ -21,7 +21,7 @@
 
 ```
 
-Doesn’t this look better?
+<strong>Doesn’t this look better?</strong>
 
 ```
   params[:sort].presence_in(sort_options) || :by_date
