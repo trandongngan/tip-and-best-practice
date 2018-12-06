@@ -76,3 +76,19 @@ t = True.new
 p -t
 p +t
 ```
+
+## Array#zip
+
+```ryby
+a = ["1", "2", "3"]
+b = ["a", "b", "c"]
+
+Hash[a.zip b] # => {"1" => "a", "2" => "b", "3" => "c"}
+```
+
+## Array#all? &:blank?
+
+```ruby
+arr = ["a",  "b",  nil, ' ']
+arr.all? &:blank? # => true 
+```
