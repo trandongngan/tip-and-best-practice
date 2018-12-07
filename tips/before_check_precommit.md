@@ -51,6 +51,22 @@ chmod +x scripts/run-tests.bash scripts/pre-commit.bash scripts/install-hooks.ba
 
 - And testing
 
++ Example content of a scripts/run-tests.bash file:
+
+```
+#!/usr/bin/env bash
+
+# if any command inside script returns error, exit and return that error 
+set -e
+
+# thanks to it we can just enter `./scripts/run-tests.bash`
+cd "${0%/*}/.."
+
+echo "Running tests"
+echo "............................" 
+echo "Failed!" && exit 1
+```
+
 ```
 git add .
 git commit -m "test"
