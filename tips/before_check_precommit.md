@@ -49,9 +49,7 @@ chmod +x scripts/run-tests.bash scripts/pre-commit.bash scripts/install-hooks.ba
 ./scripts/install-hooks.bash
 ```
 
-- And testing
-
-+ Example content of a scripts/run-tests.bash file:
+- Example content of a scripts/run-tests.bash file:
 
 ```
 #!/usr/bin/env bash
@@ -66,6 +64,8 @@ echo "Running tests"
 echo "............................" 
 echo "Failed!" && exit 1
 ```
+
+- And testing
 
 ```
 git add .
